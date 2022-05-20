@@ -15,6 +15,10 @@ printf 'y' | sudo apt install ubuntu-mate-desktop
 printf 'y' | sudo apt install gcc
 printf 'y' | sudo apt install python3
 printf 'y' | sudo apt install g++
+printf 'y' | sudo apt install curl
+
+# Vim-plug
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 # VSCode
 sudo apt-get install wget gpg
