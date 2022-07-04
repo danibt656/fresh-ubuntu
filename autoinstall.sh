@@ -10,6 +10,7 @@ printf 'y' | sudo apt upgrade
 
 # Install software
 printf 'y' | sudo apt install vim
+printf 'y' | sudo apt install tmux
 printf 'y' | sudo apt install git
 printf 'y' | sudo apt install ubuntu-mate-desktop
 printf 'y' | sudo apt install gcc
