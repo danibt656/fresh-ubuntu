@@ -1,0 +1,129 @@
+// VSCode Config File
+
+// {
+//     "editor.fontSize": 14,
+//     "editor.fontFamily": "Cascadia Code",
+//     "editor.lineHeight": 25,
+//     "editor.minimap.enabled": true,
+//     "editor.scrollbar.horizontal": "hidden",
+//     "editor.scrollbar.vertical": "hidden",
+//     "editor.lineNumbers": "on",
+//     "editor.wordWrap": "on",
+//     "editor.renderLineHighlight": "none",
+//     "editor.overviewRulerBorder": false,
+//     "workbench.editor.showTabs": false,
+//     "editor.hideCursorInOverviewRuler": true,
+//     "workbench.tree.renderIndentGuides": "none",
+//     "breadcrumbs.enabled": false,
+//     "workbench.statusBar.visible": false,
+//     "workbench.startupEditor": "newUntitledFile",
+//     "window.nativeTabs": true,
+//     "workbench.sideBar.location": "right",
+//     "git.enabled": false,
+//     "workbench.colorTheme": "Default Light+",
+//     "tabnine.experimentalAutoImports": true,
+//     "editor.guides.indentation": false
+//   }
+
+{
+    "workbench.startupEditor": "newUntitledFile",
+    "workbench.activityBar.visible": true,
+    "C_Cpp.updateChannel": "Insiders",
+    "code-runner.saveFileBeforeRun": true,
+    "code-runner.runInTerminal": true,
+    "code-runner.saveAllFilesBeforeRun": true,
+    "terminal.integrated.cursorStyle": "line",
+    "java.configuration.checkProjectSettingsExclusions": false,
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "java.home": "C:\\Program Files\\Java\\jdk-15.0.2",
+    "java.help.firstView": "gettingStarted",
+    "editor.fontFamily": "'Cascadia Code','Victor Mono','Operator Mono','Fira Code','JetBrains Mono Regular', monospace",
+    "files.autoSave": "afterDelay",
+    "python.languageServer": "Default",
+    "glassit.alpha": 255,
+    "glassit.step": 20,
+    "liveshare.authenticationProvider": "GitHub",
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter-notebook"
+    },
+    "security.workspace.trust.untrustedFiles": "open",
+    "liveServer.settings.donotShowInfoMsg": true,
+    "[dart]": {
+        "editor.formatOnSave": true,
+        "editor.formatOnType": true,
+        "editor.rulers": [
+            80
+        ],
+        "editor.selectionHighlight": false,
+        "editor.suggest.snippetsPreventQuickSuggestions": false,
+        "editor.suggestSelection": "first",
+        "editor.tabCompletion": "onlySnippets",
+        "editor.wordBasedSuggestions": false
+    },
+    "terminal.integrated.fontFamily": "'consolas'",
+    "editor.fontLigatures": null,
+    "notebook.cellToolbarLocation": {
+        "default": "right",
+        "jupyter-notebook": "left"
+    },
+    "terminal.integrated.defaultLocation": "editor",
+    "terminal.integrated.fontSize": 16,
+    "gruvboxMaterial.darkPalette": "original",
+    "gruvboxMaterial.italicKeywords": true,
+    "tabnine.experimentalAutoImports": true,
+    "workbench.colorTheme": "One Dark Pro Darker",
+    // "workbench.colorCustomizations": {
+    //     "statusBar.background" : "#3f3f40",
+    //     "statusBar.noFolderBackground" : "#222225",
+    //     "statusBar.debuggingBackground": "#511f1f"
+    // }
+    "editor.tokenColorCustomizations": {
+        "[One Dark Pro Darker]": {
+            "variables": "#ABB2BF",
+            "textMateRules": [
+                {
+                    "scope": [
+                        "keyword.operator",
+                        "keyword.operator.arithmetic",
+                        "keyword.operator.assignment",
+                        "keyword.operator.logical",
+                        "keyword.operator.new",
+                        "keyword.operator.comparison"
+                    ],
+                    "settings": {
+                        "foreground": "#56B6C2",
+                    },
+                },
+                {
+                    "scope": [
+                        "comment",
+                        "keyword.control",
+                        "keyword.other",
+                        "storage.type.function.js",
+                        "storage.modifier.async.js",
+                        "storage.type.js"
+                    ],
+                    "settings": {
+                        "fontStyle": "italic"
+                    }
+                }
+            ]
+        }
+    },
+    "editor.semanticTokenColorCustomizations": {
+        "enabled": true,
+        "rules": {
+            "*.mutable": {
+                "underline": false
+            }
+        },
+        "[One Dark Pro Darker]": {
+            "rules": {
+                "property": "#E06C75",
+                "variable": "#ABB2BF",
+            }
+        }
+    },
+    "zenMode.centerLayout": false,
+}
