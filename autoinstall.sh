@@ -39,6 +39,7 @@ git config --global user.email "dbmartin656@gmail.com"
 cp ./vimrc ~/.vimrc
 cp ./bashrc ~/.bashrc
 cp ./tmux.conf ~/.tmux.conf
+cp ./settings.json ~/.config/Code/User/settings.json
 
 # Update & Upgrade (again)
 printf 'y' | sudo apt update
