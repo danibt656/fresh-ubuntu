@@ -13,10 +13,13 @@ printf 'y' | sudo apt install vim
 printf 'y' | sudo apt install tmux
 printf 'y' | sudo apt install git
 printf 'y' | sudo apt install ubuntu-mate-desktop
-printf 'y' | sudo apt install gcc
-printf 'y' | sudo apt install python3
-printf 'y' | sudo apt install g++
 printf 'y' | sudo apt install curl
+printf 'y' | sudo apt install gcc
+printf 'y' | sudo apt install g++
+printf 'y' | sudo apt install python3
+printf 'y' | sudo apt install python3-pip
+printf 'y' | sudo apt install rustc
+printf 'y' | sudo apt install cargo
 
 # Vim-plug
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
@@ -30,6 +33,10 @@ rm -f packages.microsoft.gpg
 sudo apt install apt-transport-https
 sudo apt update
 sudo apt install code
+
+# Install Yaru theme
+sudo mv ./Yaru/Yaru-* /usr/share/themes
+sudo mv ./Yaru/Yaru_Icons /usr/share/icons
 
 # Git setup
 git config --global user.name "danibt656"
@@ -46,5 +53,10 @@ printf 'y' | sudo apt update
 printf 'y' | sudo apt upgrade
 
 
-echo "The script has been successfully executed"
-echo "Tools & config files have been installed"
+echo ""
+echo "-------------------------------------------"
+echo " The script has been successfully executed"
+echo " Tools & config files have been installed!"
+echo "-------------------------------------------"
+echo ""
+
