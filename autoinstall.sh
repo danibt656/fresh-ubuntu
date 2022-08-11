@@ -38,6 +38,9 @@ sudo apt install code
 sudo mv ./Yaru/Yaru-* /usr/share/themes
 sudo mv ./Yaru/Yaru_Icons /usr/share/icons
 
+# Load MATE Terminal profiles & config
+dconf load /org/mate/terminal/ < ./mate/mate_terminal_bkp
+
 # Git setup
 git config --global user.name "danibt656"
 git config --global user.email "dbmartin656@gmail.com"
