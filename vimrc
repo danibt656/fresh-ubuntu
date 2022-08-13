@@ -16,12 +16,7 @@ set showmatch
 set term=xterm-256color
 set wildmenu wildmode=longest:full,full wildcharm=<Tab>
 syntax on
-set nu rnu
-
-" Colors
-color monokai
-hi Normal guibg=NONE ctermbg=NONE
-hi Normal guifg=NONE ctermfg=NONE
+set nu
 
 " Vim-Plug config
 if empty(glob('~/.vim/autoload/plug.vim'))
@@ -29,11 +24,10 @@ if empty(glob('~/.vim/autoload/plug.vim'))
     \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
   autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
-
 call plug#begin('~/.vim/plugged')
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
-"    Plug 'yuezk/vim-js'
-"    Plug 'rust-lang/rust.vim'
 call plug#end()
-
 let g:coc_disable_startup_warning=1
+
+" Custom keymaps
+nmap <C-m> :Te<CR>
