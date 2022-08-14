@@ -14,12 +14,14 @@ printf 'y' | sudo apt install tmux
 printf 'y' | sudo apt install git
 printf 'y' | sudo apt install ubuntu-mate-desktop
 printf 'y' | sudo apt install curl
+printf 'y' | sudo apt install dconf
 printf 'y' | sudo apt install gcc
 printf 'y' | sudo apt install g++
 printf 'y' | sudo apt install python3
 printf 'y' | sudo apt install python3-pip
 printf 'y' | sudo apt install rustc
 printf 'y' | sudo apt install cargo
+printf 'y' | sudo apt install i3 i3status
 
 # Vim-plug
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
@@ -50,6 +52,12 @@ cp ./vimrc ~/.vimrc
 cp ./bashrc ~/.bashrc
 cp ./tmux.conf ~/.tmux.conf
 cp ./settings.json ~/.config/Code/User/settings.json
+
+# i3wm config files
+mkdir -p ~/.config/i3
+mkdir -p ~/.config/i3status
+cp ./i3/i3config ~/.config/i3/config
+cp ./i3/i3statusconfig ~/.config/i3status/config
 
 # Update & Upgrade (again)
 printf 'y' | sudo apt update
