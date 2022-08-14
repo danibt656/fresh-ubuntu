@@ -12,16 +12,14 @@ printf 'y' | sudo apt upgrade
 printf 'y' | sudo apt install vim
 printf 'y' | sudo apt install tmux
 printf 'y' | sudo apt install git
-printf 'y' | sudo apt install ubuntu-mate-desktop
+printf 'y' | sudo apt install ubuntu-mate-desktop           # Mate DE
 printf 'y' | sudo apt install curl
 printf 'y' | sudo apt install dconf
 printf 'y' | sudo apt install gcc
 printf 'y' | sudo apt install g++
-printf 'y' | sudo apt install python3
-printf 'y' | sudo apt install python3-pip
-printf 'y' | sudo apt install rustc
-printf 'y' | sudo apt install cargo
-printf 'y' | sudo apt install i3 i3status
+printf 'y' | sudo apt install python3 python3-pip           # Python & pip
+printf 'y' | sudo apt install rustc cargo                   # Rust
+printf 'y' | sudo apt install i3 i3status feh               # i3wm
 
 # Vim-plug
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
