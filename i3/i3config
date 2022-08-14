@@ -51,6 +51,9 @@ bindsym $mod+Shift+q kill
 # Browser
 bindsym $mod+i exec firefox
 
+# Lock screen
+bindsym $mod+Shift+x exec i3lock --color=000000
+
 # start dmenu (a program launcher)
 bindsym $mod+d exec dmenu_run
 # There also is the (new) i3-dmenu-desktop which only displays applications
