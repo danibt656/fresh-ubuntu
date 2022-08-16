@@ -12,7 +12,7 @@ Feel free to tweak it for your own machine, but I appreciate if you give me a st
 
 ## Additional notes
 
-## distro of choice
+### distro of choice
 
 This configuration setup was made bearing in mind Ubuntu-based Linux distributions. More specifically, I developed them in Ubuntu 20.04 and, more recently, Ubuntu 18.04.
 
