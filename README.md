@@ -38,6 +38,8 @@ Here, I also added custom keymaps:
 
 + Press `Mod+i` to open the Firefox web browser
 
++ The Gnome Calculator, the Nautilus file explorer, and various other windows, default open in floating mode rather than tiling. Why would anyone want fullscreen calculators, anyways?
+
 ### MATE Themes
 
 I know what I said about ricing on the i3 section. But bear with me, I can't stand the default Ambiance themes of Ubuntu MATE. So I included the whole Yaru themes on this repo, and they get automatically installed. Just navigate inside the MATE appearance manager, and select them.
