@@ -30,10 +30,16 @@ Also, there are custom keymaps:
 
 ### i3 tiling window manager
 
-This install script configures both i3 and i3status in a very minimalistic way (almost no ricing included).
+This install script configures both i3 and i3status in a very minimalistic way. There's almost no ricing included. If you don't like it you should be thinking of getting actual work done rather than spending your evenings tweaking a window manager. I learned it the hard way.
 
 You'll have to edit the file at `~/.config/i3/config` for setting up the wallpaper on your desired image's path.
 
 Here, I also added custom keymaps:
 
 + Press `Mod+i` to open the Firefox web browser
+
+### MATE Themes
+
+I know what I said about ricing on the i3 section. But bear with me, I can't stand the default Ambiance themes of Ubuntu MATE. So I included the whole Yaru themes on this repo, and they get automatically installed. Just navigate inside the MATE appearance manager, and select them.
+
+I'm not trying to steal anybody's work, so you can refer to the original Yaru themes [here](https://github.com/ubuntu/yaru).
