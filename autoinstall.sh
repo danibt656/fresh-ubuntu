@@ -3,6 +3,24 @@
 #
 # @author   Daniel Barahona 2022
 
+########  FUNCTIONS  ########
+
+Conda() {
+    # Get miniconda setup
+    wget https://repo.anaconda.com/miniconda/Miniconda3-py39_4.12.0-Linux-x86_64.sh
+    chmod +x ./Miniconda3-py39_4.12.0-Linux-x86_64.sh
+    ./Miniconda3-py39_4.12.0-Linux-x86_64.sh
+    source ~/.bashrc
+    conda install -y jupyter
+    conda create --name tfg python=3.7
+    conda activate tfg
+    conda install nb_conda
+    conda install -c anaconda tensorflow-gpu
+    conda install -c pytorch numpy matplotlib pandas
+}
+
+#############################
+
 
 # Update & Upgrade
 printf 'y' | sudo apt update
@@ -13,8 +31,7 @@ printf 'y' | sudo apt install vim
 printf 'y' | sudo apt install tmux
 printf 'y' | sudo apt install git
 printf 'y' | sudo apt install ubuntu-mate-desktop
-printf 'y' | sudo apt install curl
-printf 'y' | sudo apt install dconf
+printf 'y' | sudo apt install curl wget
 printf 'y' | sudo apt install gcc
 printf 'y' | sudo apt install g++
 printf 'y' | sudo apt install python3 python3-pip
@@ -34,12 +51,21 @@ sudo apt install apt-transport-https
 sudo apt update
 sudo apt install code
 
+# Get the options
+while getopts ":a" option; do
+   case $option in
+      a) # install miniconda
+          Help
+         exit;;
+   esac
+done
+
 # Install Yaru theme
 sudo mv ./Yaru/Yaru-* /usr/share/themes
 sudo mv ./Yaru/Yaru_Icons /usr/share/icons
 
 # Load MATE Terminal profiles & config
-dconf load /org/mate/terminal/ < ./mate/mate_terminal_bkp
+#dconf load /org/mate/terminal/ < ./mate/mate_terminal_bkp
 
 # Git setup
 git config --global user.name "danibt656"
