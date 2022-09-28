@@ -57,8 +57,12 @@ if [ -n "$force_color_prompt" ]; then
 fi
 
 if [ "$color_prompt" = yes ]; then
+# Default prompt
     #PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
-    PS1='\[\e[0;1;94m\]\w\[\e[0m\]$ \[\e[0m\]'
+# Minimalist prompt
+    #PS1='\[\e[0;1;94m\]\w\[\e[0m\]$ \[\e[0m\]'
+# Enhanced prompt
+    PS1='\[\e[0m\]\H \[\e[0;1;38;5;130m\]:\[\e[0;1;38;5;130m\]: \[\e[0;1;92m\]\w \[\e[0;1;38;5;130m\]$? \[\e[0;1;94m\]» \[\e[0m\]'
 else
     PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
 fi
