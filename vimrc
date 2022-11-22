@@ -15,6 +15,7 @@ set showcmd
 set showmatch
 set term=xterm-256color
 set wildmenu wildmode=longest:full,full wildcharm=<Tab>
+colo delek
 syntax on
 set nu
 
@@ -25,9 +26,20 @@ if empty(glob('~/.vim/autoload/plug.vim'))
   autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
 call plug#begin('~/.vim/plugged')
-    Plug 'neoclide/coc.nvim', {'branch': 'release'}
+"    Plug 'neoclide/coc.nvim', {'branch': 'release'}
 call plug#end()
 let g:coc_disable_startup_warning=1
 
 " Custom keymaps
-nmap <C-m> :Te<CR>
+let mapleader = ","
+noremap <leader>m :Te<CR>
+noremap <leader>t :terminal<cr>
+autocmd Filetype python setlocal expandtab tabstop=4 shiftwidth=4 softtabstop=4
+
+inoremap ( ()<Esc>i
+inoremap { {}<Esc>i
+inoremap {<CR> {<CR>}<Esc>O
+inoremap [ []<Esc>i
+inoremap < <><Esc>i
+inoremap ' ''<Esc>i
+inoremap " ""<Esc>i
