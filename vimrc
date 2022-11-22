@@ -19,22 +19,14 @@ colo delek
 syntax on
 set nu
 
-" Vim-Plug config
-if empty(glob('~/.vim/autoload/plug.vim'))
-  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
-    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
-endif
-call plug#begin('~/.vim/plugged')
-"    Plug 'neoclide/coc.nvim', {'branch': 'release'}
-call plug#end()
-let g:coc_disable_startup_warning=1
-
 " Custom keymaps
 let mapleader = ","
 noremap <leader>m :Te<CR>
 noremap <leader>t :terminal<cr>
+
+" Different indentation for languages
 autocmd Filetype python setlocal expandtab tabstop=2 shiftwidth=2 softtabstop=2
+autocmd Filetype c setlocal expandtab tabstop=4 shiftwidth=4 softtabstop=4
 
 inoremap ( ()<Esc>i
 inoremap { {}<Esc>i
