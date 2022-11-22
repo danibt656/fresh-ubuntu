@@ -34,7 +34,7 @@ let g:coc_disable_startup_warning=1
 let mapleader = ","
 noremap <leader>m :Te<CR>
 noremap <leader>t :terminal<cr>
-autocmd Filetype python setlocal expandtab tabstop=4 shiftwidth=4 softtabstop=4
+autocmd Filetype python setlocal expandtab tabstop=2 shiftwidth=2 softtabstop=2
 
 inoremap ( ()<Esc>i
 inoremap { {}<Esc>i
